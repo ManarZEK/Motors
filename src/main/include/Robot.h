@@ -8,7 +8,8 @@
 #pragma once
 
 #include <string>
-
+#include<Joystick.h>
+#include<VictorSP.h>
 #include <IterativeRobot.h>
 #include <SmartDashboard/SendableChooser.h>
 
@@ -25,8 +26,8 @@ class Robot : public frc::IterativeRobot {
  
 
  private:
-  frc::VictorSP VictorFirst(0);
-  frc::VictorSp VictorSecond(1);
+  frc::VictorSP VictorFirst{0};
+  frc::VictorSp VictorSecond{1};
 
   Joystick *m_joystick;
 };
