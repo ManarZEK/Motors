@@ -12,7 +12,7 @@
 #include <SmartDashboard/SmartDashboard.h>
 
 void Robot::RobotInit() {
-m_joytick = new Joystick(1);
+m_joystick = new Joystick(1);
 }
 
 /**
