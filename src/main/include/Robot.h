@@ -9,7 +9,7 @@
 
 #include <string>
 #include<Joystick.h>
-#include<VictorSP.h>
+#include<ctre/Phoenix.h>
 #include <IterativeRobot.h>
 #include <SmartDashboard/SendableChooser.h>
 
@@ -26,8 +26,8 @@ class Robot : public frc::IterativeRobot {
  
 
  private:
-  frc::VictorSP VictorFirst{0};
-  frc::VictorSP VictorSecond{1};
+  WPI_TalonSRX m_motor1{4};
+  WPI_TalonSRX m_motor2{5};
 
   Joystick *m_joystick;
 };

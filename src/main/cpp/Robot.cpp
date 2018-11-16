@@ -25,7 +25,7 @@ m_joystick = new Joystick(1);
  */
 
 void Robot::RobotPeriodic() {}
-void Robot::RobotInit(){
+
 
 /**
  * This autonomous (along with the chooser code above) shows how to select
